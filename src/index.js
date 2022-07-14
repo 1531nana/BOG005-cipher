@@ -3,6 +3,7 @@
 // console.log(cipher);
 
 import cipher from './cipher.js';
+// input que va a contener el número de desplazamientos que ingrese el usuario
 let offset = document.getElementById("desplazamiento");
 let btnMensajeACifrar = document.getElementById("enviar_cifrado");
 let mensajeACifrar = document.getElementById("cifrar").value;
@@ -17,6 +18,7 @@ btnMensajeACifrar.addEventListener("click", cipher.encode);
 //boton para cifrar mensaje
 // cipher.encode(offset, mensajeACifrar);
 // btnMensajeACifrar.addEventListener("click", cipher.encode());
+
 
 //botón para descifrar el mensaje
 btnMensajeADescifrar.addEventListener("click", cipher.decode);
