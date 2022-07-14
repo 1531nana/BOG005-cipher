@@ -13,12 +13,6 @@ let mensajeADescifrar = document.getElementById("descifrar").value;
 //botón que muestra el mensaje cifrado al ser llamado
 btnMensajeACifrar.addEventListener("click", cipher.encode);
 
-// cipher.encode(offset, mensajeACifrar);
-//boton para cifrar mensaje
-// cipher.encode(offset, mensajeACifrar);
-// btnMensajeACifrar.addEventListener("click", cipher.encode());
-
-
 //botón para descifrar el mensaje
 btnMensajeADescifrar.addEventListener("click", cipher.decode);
 

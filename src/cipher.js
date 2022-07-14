@@ -29,7 +29,20 @@ const cipher = {
 
 
   decode: function(offset, mensajeADescifrar){
-    
+    let resul1 = "";
+    if(offset){
+      mensajeADescifrar = new String(descifrar.value.toUpperCase());
+      console.log(mensajeADescifrar);
+      for(let i = 0; i < mensajeADescifrar.length; i++){
+        let resultadoDescifrar = mensajeADescifrar.charCodeAt([i]);
+        console.log(resultadoDescifrar);
+        let resta = resultadoDescifrar - desplazamiento.value;
+        console.log(resta);
+        let codigoDescifrado = String.fromCharCode([resta]);
+        resul1 += codigoDescifrado;
+      }
+      document.write("su código descifrado es: "+resul1);
+    }
   }
 };
 
