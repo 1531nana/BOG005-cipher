@@ -7,8 +7,38 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Códigos de la II Guerra Mundial</h1>
+      <h2>Bienvenid@</h2>
+      <p>Aquí podrás descubrir los códigos que utilizaban los alemanes durante la II Guerra Mundial, para poders enviar mensajes conficenciales. </p>
+      <!-- instrucciones que debe seguir el usuario para utilizar la app  -->
+      <h3 id="instruccion">Instrucciones:</h3>
+        <p>lo que debes hacer es: 
+          <ol><li>debes indicar un número de desplazamiento</li>
+          <li>debes insertar un mensaje que quieras cifrar o descifrar utilizando solamente letras</li></ol>
+        </p>
     </div>
+    <!-- permite escribir la cantidad de desplazamientos que el usuario eliga -->
+    <form id="formulario">
+
+      <div id="desplazar_numero">
+        <label for="numero" >indique el número de desplazamiento</label>
+        <input type="number" id="desplazamiento" placeholder="número">
+          <!-- <button type="button" id="enviar_desplazada" >Enviar desplazamiento</button> -->
+      </div> 
+      <!-- el usuario escribe el mensaje que quiere cifrar -->
+      <section id="cifrar_mensaje">
+        <br>
+        <label for="mensaje_cifrado" id="cifrado">ingrese el mensaje que quiere cifrar</label>
+        <input type="text" name="cifrado" id="cifrar" placeholder="ingrese el mensaje que quiera cifrar">
+        <button type="button" id="enviar_cifrado">enviar mensaje a cifrar</button>
+      </section>
+      <!-- el usuario escribe el mensaje que quiere descifrar -->
+      <section id="mensaje_descifrado">
+        <label for="mensaje_descifrado" id="descifrado">ingrese el mensaje que quiere descifrar</label>
+        <input type="text" name="descifrado" id="descifrar" placeholder="ingrese el mensaje que quiere descifrar ">
+        <button type="button" id="enviar_descifrado">enviar mensaje a descifrar</button>
+      </section>
+    </form>
     <script src="index.js" type="module"></script>
   </body>
 </html>
