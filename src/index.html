@@ -12,37 +12,39 @@
       </header>
       <section id="informacion">
         <h2 id="bienvenida">Bienvenid@</h2>
-        <p>Aquí podrás descubrir los códigos que utilizaban los alemanes durante la II Guerra Mundial, para poder enviar mensajes conficenciales. </p>
+        <p id="p_bienvenida">Aquí podrás descubrir los códigos que utilizaban los alemanes durante <br> II Guerra Mundial, para poder enviar mensajes confidenciales. </p>
       </section>
         <!-- instrucciones que debe seguir el usuario para utilizar la app  -->
-        <h3 id="instruccion">Instrucciones:</h3>
-        <p>lo que debes hacer es: 
-          <ol><li>debes indicar un número de desplazamiento</li>
-            <li>debes insertar un mensaje que quieras cifrar o descifrar utilizando solamente letras</li></ol>
+        <h3 id="instruccion">Instrucciones: </h3>
+        <p>Lo que debes hacer es: 
+          <ol><li>Debes indicar un número de desplazamiento que permita ver su mensaje cifrado.</li>
+            <li>Debes insertar un mensaje que quieras cifrar o descifrar, utilizando solo letras.</li></ol>
           </p>
     </div>
     <!-- permite escribir la cantidad de desplazamientos que el usuario eliga -->
     <form id="formulario">
 
       <div id="desplazar_numero">
-        <label for="numero" >indique el número de desplazamiento</label>
-        <input type="number" id="desplazamiento" placeholder="número" >
+        <label for="numero" id="label_desplaza" >indique el número de desplazamiento</label>
+        <input type="number" id="desplazamiento" placeholder="número"  >
           <!-- <button type="button" id="enviar_desplazada" >Enviar desplazamiento</button> -->
       </div> 
-      <br>
+     
       <!-- el usuario escribe el mensaje que quiere cifrar -->
-      <section id="cifrar_mensaje">
+      <section id="cifrar_descifrar">
+        <section id="cifrar_mensaje">
+          <br>
+          <label for="mensaje_cifrado" id="cifrado">ingrese el mensaje que quiere cifrar</label>
+          <input type="text" name="cifrado" id="cifrar" placeholder="ingrese el mensaje">
+          <button type="button" id="enviar_cifrado">enviar mensaje</button>
+        </section>
         <br>
-        <label for="mensaje_cifrado" id="cifrado">ingrese el mensaje que quiere cifrar</label>
-        <input type="text" name="cifrado" id="cifrar" placeholder="ingrese el mensaje que quiera cifrar">
-        <button type="button" id="enviar_cifrado">enviar mensaje a cifrar</button>
-      </section>
-      <br>
-      <!-- el usuario escribe el mensaje que quiere descifrar -->
-      <section id="mensaje_descifrado">
-        <label for="mensaje_descifrado" id="descifrado">ingrese el mensaje que quiere descifrar</label>
-        <input type="text" name="descifrado" id="descifrar" placeholder="ingrese el mensaje que quiere descifrar ">
-        <button type="button" id="enviar_descifrado">enviar mensaje a descifrar</button>
+        <!-- el usuario escribe el mensaje que quiere descifrar -->
+        <section id="mensaje_descifrado">
+          <label for="mensaje_descifrado" id="descifrado">ingrese el mensaje que quiere descifrar</label>
+          <input type="text" name="descifrado" id="descifrar" placeholder="ingrese el mensaje">
+          <button type="button" id="enviar_descifrado">enviar mensaje </button>
+        </section>
       </section>
     </form>
     <script src="index.js" type="module"></script>
