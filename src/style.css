@@ -35,6 +35,7 @@ text-align: center;
 }
 
 #desplazamiento{
+    font-size: larger;
     text-align: center;
     position: relative;
     border-radius: 20rem;
@@ -50,6 +51,28 @@ text-align: center;
     top: 10px;
     left: 50px;
     padding: 5px 5px;
+}
+
+#visualiza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+#caja_resultado{
+   width: 300px;
+   height: 100px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: larger;
+   color: rgb(29, 25, 14);
+   background: rgb(236, 221, 209);
 }
 
 
@@ -130,3 +153,4 @@ text-align: center;
     color:rgb(24, 22, 22);
     border: 0.5px solid rgb(128, 138, 73);
 }
+
