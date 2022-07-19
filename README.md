@@ -33,3 +33,4 @@ Mi prototipo de alta fidelidad se acerca un poco más al resultado final, auqnue
 Al final, los estilos que empleé se enfocaron en darle un contexto a la aplicación referente  a la Segunda Guerra Mundial, una pequeña introducción y unos ínput más grandes para que fueran el punto focal. Para eso, utilicé algunas imágenes sobre esa época y unos colores que nos permiten imaginarnos esos ambientes donde se desarrollaron los hechos atroces.
 
 También quise darle un enfoque a los ínput donde el usuario pueda escribir su mensaje y en el centro, donde pueda ingresar el número de desplazamientos que desee.
+.
