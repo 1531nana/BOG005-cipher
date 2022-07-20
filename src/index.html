@@ -15,11 +15,13 @@
         <p id="p_bienvenida">Aquí podrás descubrir los códigos que utilizaban los alemanes durante <br> II Guerra Mundial, para poder enviar mensajes confidenciales. </p>
       </section>
         <!-- instrucciones que debe seguir el usuario para utilizar la app  -->
+        <section id="instruc">
         <h3 id="instruccion">Instrucciones: </h3>
         <p>Lo que debes hacer es: 
           <ol><li>Debes indicar un número de desplazamiento que permita ver su mensaje cifrado.</li>
             <li>Debes insertar un mensaje que quieras cifrar o descifrar, utilizando solo letras.</li></ol>
           </p>
+        </section>
     </div>
     <!-- permite escribir la cantidad de desplazamientos que el usuario eliga -->
     <form id="formulario">
@@ -28,30 +30,26 @@
         <label for="numero" id="label_desplaza" >indique el número de desplazamiento</label>
         <input type="number" id="desplazamiento" placeholder="número"  >
           <!-- <button type="button" id="enviar_desplazada" >Enviar desplazamiento</button> -->
-      </div> 
-     <br>
-     <br> 
-      <div>
-        <label for="resultado" id="visualiza">visualiza el mensaje</label>
-        <input type="text" id="caja_resultado" value="" placeholder="visualización del resultado">
       </div>
-
       <!-- el usuario escribe el mensaje que quiere cifrar -->
       <section id="cifrar_descifrar">
         <section id="cifrar_mensaje">
-          <br>
           <label for="mensaje_cifrado" id="cifrado">ingrese el mensaje que quiere cifrar</label>
-          <input type="text" name="cifrado" id="cifrar" placeholder="ingrese el mensaje">
+          <textarea name="cifrado" id="cifrar" cols="30" rows="10" placeholder="ingrese el mensaje" ></textarea>
           <button type="button" id="enviar_cifrado">enviar mensaje</button>
         </section>
-        <br>
         <!-- el usuario escribe el mensaje que quiere descifrar -->
         <section id="mensaje_descifrado">
           <label for="mensaje_descifrado" id="descifrado">ingrese el mensaje que quiere descifrar</label>
-          <input type="text" name="descifrado" id="descifrar" placeholder="ingrese el mensaje">
+          <textarea name="descifrado" id="descifrar" cols="30" rows="10" placeholder="ingrese el mensaje" ></textarea>
           <button type="button" id="enviar_descifrado">enviar mensaje </button>
         </section>
       </section>
+      <div>
+        <label for="resultado" id="visualiza">visualiza el mensaje</label>
+        <textarea name="caja_resul" id="caja_resultado" cols="30" rows="10" placeholder="resultado" value="" ></textarea>
+
+      </div>
     </form>
     
     <script src="index.js" type="module"></script>

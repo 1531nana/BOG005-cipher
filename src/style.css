@@ -1,5 +1,6 @@
 body{
 background-image: url('avion.png') ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -30,11 +31,17 @@ text-align: center;
     font-style: italic;
 }
 
+#instruc{
+    padding-left: 20px;
+}
+
 #desplazar_numero{
     text-align: center; 
+    padding-top: 20px;
 }
 
 #desplazamiento{
+    margin-top: 30px auto;
     font-size: larger;
     text-align: center;
     position: relative;
@@ -51,30 +58,8 @@ text-align: center;
     top: 10px;
     left: 50px;
     padding: 5px 5px;
+   font-weight: bold;
 }
-
-#visualiza{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-}
-
-#caja_resultado{
-   width: 300px;
-   height: 100px;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   font-size: larger;
-   color: rgb(29, 25, 14);
-   background: rgb(236, 221, 209);
-}
-
 
 #cifrado{
     display: block;
@@ -82,10 +67,12 @@ text-align: center;
     top: 10px;
     left: 50px;
     padding: 5px 5px;
+   font-weight: bold;
 }
 
 #cifrar_mensaje{
     float: left;
+    padding-left: 25px;
     position: relative;
 }
 
@@ -121,6 +108,7 @@ text-align: center;
     top: 10px;
     left: 50px;
     padding: 5px 5px;
+   font-weight: bold;
 }
 
 #mensaje_descifrado{
@@ -152,5 +140,33 @@ text-align: center;
     background-color: rgb(170, 152, 128);
     color:rgb(24, 22, 22);
     border: 0.5px solid rgb(128, 138, 73);
+}
+
+
+#visualiza{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    padding-top: 198px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   font-weight: bold;
+   font-weight: bold;
+}
+
+#caja_resultado{
+   width: 300px;
+   height: 100px;
+   margin: 5px auto;
+   /* padding-top: 20px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   color: rgb(29, 25, 14);
+   background: rgb(236, 221, 209);
 }
 
