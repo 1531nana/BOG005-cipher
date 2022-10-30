@@ -1,5 +1,8 @@
 body{
-background-image: url('avion.png') ;
+background: url('avion.png') no-repeat ;
+background-size: cover;
+background-position: center center;
+height: 100%;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -151,14 +154,12 @@ text-align: center;
     justify-content: center;
     align-items: center;
    font-weight: bold;
-   font-weight: bold;
 }
 
 #caja_resultado{
    width: 300px;
    height: 100px;
    margin: 5px auto;
-   /* padding-top: 20px; */
    display: flex;
    flex-direction: column;
    justify-content: center;
